@@ -6,7 +6,7 @@ const SP_AFFILIATE_TAG = "";   // Spotify (Impact): https://artists.spotify.com/
 
 const I18N = {
     ja: {
-        subtitle: 'スタンダード名で、ギタリストの名テイクを探す',
+        subtitle: 'スタンダード名を入力して、ギタリストのテイクを探す',
         searchPlaceholder: '例: Autumn Leaves, All The Things You Are …',
         resultUnit: '件',
         searchHint: '曲名を入力し、候補を選ぶとギタリストと収録アルバムを表示します。',
