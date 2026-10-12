@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz Guitar Takes</title>
+    <meta name="description" id="metaDescription" content="Explore jazz guitar recordings of classic standards. Find guitarists, albums, and links to music services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <button id="langToggle" class="lang-toggle" type="button">日本語</button>
+
+        <header class="app-header">
+            <h1 id="logo">🎸 Jazz Guitar Takes</h1>
+            <p id="subtitle" data-i18n="subtitle">A database of jazz guitar recordings of jazz standards.</p>
+        </header>
+
+        <div class="search-wrap">
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="e.g. Autumn Leaves, All The Things You Are …" autocomplete="off">
+                <ul id="autocompleteList" class="autocomplete-list"></ul>
+            </div>
+        </div>
+
+        <div class="results-bar" aria-live="polite">
+            <p id="searchHint" data-i18n="searchHint">Enter a jazz standard and select a title to see guitarists and albums.</p>
+            <span id="resultSummary" hidden><span id="resultCount">0</span> <span id="resultUnit" data-i18n="resultUnit">results</span></span>
+        </div>
+
+        <div id="resultsHeader" class="results-header" style="display:none">
+            <span data-i18n="colGuitarist">Guitarist</span>
+            <span data-i18n="colAlbums">Albums</span>
+            <span data-i18n="colLinks">Links</span>
+        </div>
+
+        <div id="resultsGrid" class="results-grid"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
